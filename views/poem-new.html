@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html style="font-size: 50px;">
+<head>
+<title>黑牛福利社</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="黑牛保险,滴滴出行,出行红包,互联网保险,平安,泰康,大都会,招商信诺,百年人寿,交通意外,重大疾病,健康保障,问卷调查">
+<meta name="description" content="众多福利等你拿，点击查看详情&gt;&gt;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="stylesheet" href="https://static.heiniubao.com/static/public/heiniu_welfare_service/css/wap.min.css?v=1.1.27">
+<script type="text/javascript" src="https://static.heiniubao.com/static/public/public_files/js/library/jquery.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?04a46bd3fbc0f32258e2247ac21de043";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+(function (doc, win) {
+var docEl = doc.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function () {
+var clientWidth = docEl.clientWidth;
+if (!clientWidth) return;
+if(clientWidth>=750){
+docEl.style.fontSize = '100px';
+}else{
+docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+}
+};
+if (!doc.addEventListener) return;
+win.addEventListener(resizeEvt, recalc, false);
+doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+</head>
+<body>
+<input id="show_gift" type="hidden" value="False">
+<input id="dalibao" type="hidden" value="/activity/get_gift?owner=hn%3Add_redirect1&amp;ext=gift">
+<input id="share-desc" type="hidden" value="众多福利等你拿，点击查看详情&gt;&gt;">
+<div id="tab-title" class="tab-title">
+<div class="title">
+<span>黑牛福利社</span>
+
+</div>
+<script type="text/javascript">
+	document.getElementById("shang").onclick = function(){
+			document.getElementById('xin').style = 'display:block';
+			document.getElementById('dai').style = 'display:none';
+			document.getElementById('ka').style = 'display:none';
+			document.getElementById('hong').style = 'display:none';
+			document.getElementById('fu').style = 'display:none';
+	};
+	document.getElementById("ji").onclick = function(){
+			document.getElementById('xin').style = 'display:none';
+			document.getElementById('dai').style = 'display:block';
+			document.getElementById('ka').style = 'display:none';
+			document.getElementById('hong').style = 'display:none';
+			document.getElementById('fu').style = 'display:none';
+	};
+	document.getElementById("yong").onclick = function(){
+			document.getElementById('xin').style = 'display:none';
+			document.getElementById('dai').style = 'display:none';
+			document.getElementById('ka').style = 'display:block';
+			document.getElementById('hong').style = 'display:none';
+			document.getElementById('fu').style = 'display:none';
+	};
+	document.getElementById("xian").onclick = function(){
+			document.getElementById('xin').style = 'display:none';
+			document.getElementById('dai').style = 'display:none';
+			document.getElementById('ka').style = 'display:none';
+			document.getElementById('hong').style = 'display:block';
+			document.getElementById('fu').style = 'display:none';
+	};
+	document.getElementById("geng").onclick = function(){
+			document.getElementById('xin').style = 'display:none';
+			document.getElementById('dai').style = 'display:none';
+			document.getElementById('ka').style = 'display:none';
+			document.getElementById('hong').style = 'display:none';
+			document.getElementById('fu').style = 'display:block';
+	};
+</script>
+<div class="menue clx">
+
+<a class="item item-cur " id="shang">上新啦</a>
+
+<a class="item  hot" id="ji">极速贷款</a>
+
+<a class="item  " id="yong">信用卡</a>
+
+<a class="item  " id="xian">现金红包</a>
+
+<a class="item  " id="geng">更多福利</a>
+
+</div>
+</div>
+<div class="fixed-title-repair"></div>
+<div id="outer-box" class="outer-box">
+<ul id="inner-box" class="inner-box">
+{% for val in html0%}
+
+<li class="page-item item " style="display: block" id='xin'>
+
+<a class="items-a-box " href="{{val['url']}}">
+<div class="activity-item clx">
+<div class="logo-part fl">
+<div class="logo-types {{val['adinfo']}}"></div>
+<img src="http://www.zylm-5.6.com{{val['imageurl']}}"/>
+</div>
+<div class="msg-part fl">
+<p class="msg-title">{{val['headline']}}</p>
+    {% for arr in val['description'].split('/') %}
+<p class="msg-word">{{arr}}</p>
+
+    {%end%}
+</div>
+<div class="packect-part fl" href="/activity/go_weitouzi1?owner=hn%3Add_redirect1">
+<img src="http://www.zylm-5.6.com{{val['imageurl1']}}"/>
+</div>
+</div>
+</a>
+
+</li>
+{% end %}
+
+
+{% for val in html1%}
+
+<li class="page-item item " style="display: block" id='dai'>
+
+<a class="items-a-box " href="{{val['url']}}">
+<div class="activity-item clx">
+<div class="logo-part fl">
+<div class="logo-types {{val['adinfo']}}"></div>
+<img src="http://www.zylm-5.6.com{{val['imageurl']}}"/>
+</div>
+<div class="msg-part fl">
+<p class="msg-title">{{val['headline']}}</p>
+    {% for arr in val['description'].split('/') %}
+<p class="msg-word">{{arr}}</p>
+
+    {%end%}
+</div>
+<div class="packect-part fl" href="/activity/go_weitouzi1?owner=hn%3Add_redirect1">
+<img src="http://www.zylm-5.6.com{{val['imageurl1']}}"/>
+</div>
+</div>
+</a>
+
+</li>
+{% end %}
+
+{% for val in html2%}
+
+<li class="page-item item " style="display: block" id='ka'>
+
+<a class="items-a-box " href="{{val['url']}}">
+<div class="activity-item clx">
+<div class="logo-part fl">
+<div class="logo-types {{val['adinfo']}}"></div>
+<img src="http://www.zylm-5.6.com{{val['imageurl']}}"/>
+</div>
+<div class="msg-part fl">
+<p class="msg-title">{{val['headline']}}</p>
+    {% for arr in val['description'].split('/') %}
+<p class="msg-word">{{arr}}</p>
+
+    {%end%}
+</div>
+<div class="packect-part fl" href="/activity/go_weitouzi1?owner=hn%3Add_redirect1">
+<img src="http://www.zylm-5.6.com{{val['imageurl1']}}"/>
+</div>
+</div>
+</a>
+
+</li>
+{% end %}
+
+{% for val in html3%}
+
+<li class="page-item item " style="display: block" id='hong'>
+
+<a class="items-a-box " href="{{val['url']}}">
+<div class="activity-item clx">
+<div class="logo-part fl">
+<div class="logo-types {{val['adinfo']}}"></div>
+<img src="http://www.zylm-5.6.com{{val['imageurl']}}"/>
+</div>
+<div class="msg-part fl">
+<p class="msg-title">{{val['headline']}}</p>
+    {% for arr in val['description'].split('/') %}
+<p class="msg-word">{{arr}}</p>
+
+    {%end%}
+</div>
+<div class="packect-part fl" href="/activity/go_weitouzi1?owner=hn%3Add_redirect1">
+<img src="http://www.zylm-5.6.com{{val['imageurl1']}}"/>
+</div>
+</div>
+</a>
+
+</li>
+{% end %}
+
+{% for val in html4%}
+
+<li class="page-item item " style="display: block" id='fu'>
+
+<a class="items-a-box " href="{{val['url']}}">
+<div class="activity-item clx">
+<div class="logo-part fl">
+<div class="logo-types {{val['adinfo']}}"></div>
+<img src="http://www.zylm-5.6.com{{val['imageurl']}}"/>
+</div>
+<div class="msg-part fl">
+<p class="msg-title">{{val['headline']}}</p>
+    {% for arr in val['description'].split('/') %}
+<p class="msg-word">{{arr}}</p>
+
+    {%end%}
+</div>
+<div class="packect-part fl" href="/activity/go_weitouzi1?owner=hn%3Add_redirect1">
+<img src="http://www.zylm-5.6.com{{val['imageurl1']}}"/>
+</div>
+</div>
+</a>
+
+</li>
+{% end %}
+
+</ul>
+</div>
+<div id="footer" class="footer">
+<p>Copyright © 2016-2017 无锡信成网络科技有限公司  苏ICP备 16004147号-1</p>
+<p>服务热线：010-52747178（工作日10:00-17:00）</p>
+<p>服务邮箱：service@heiniubao.com | 服务 QQ：3471653040</p>
+</div>
+
+
+
+<script src="https://static.heiniubao.com/static/public/public_files/js/library/require.js" data-main="https://static.heiniubao.com/static/public/heiniu_welfare_service/js/wap.min.js?v=1.0.33" defer async="true"></script>
+<div style="display:none;">
+<script type="text/javascript" src="https://static.heiniubao.com/static/js/statistic.js"></script>
+</div>
+</body>
+</html>

@@ -63,14 +63,14 @@ doc.addEventListener('DOMContentLoaded', recalc, false);
 <div class="fixed-title-repair"></div>
 <div id="outer-box" class="outer-box">
 <ul id="inner-box" class="inner-box">
-
+{% for value in html%}
+ {% for val in value%}
 <li class="page-item item block">
 
 
 
-{% for value in html%}
- {% for val in value%}
-<a class="items-a-box " href="{{val['url']}}">
+
+<a class="items-a-box " href="http://127.0.0.1:10086/redi?url={{val['url']}}&adsid={{val['adsid']}}&adstypeid={{val['adstypeid']}}&planid={{val['planid']}}&uid={{val['uid']}}">
 <div class="activity-item clx">
 <div class="logo-part fl">
 <div class="logo-types {{val['adinfo']}}"></div>
@@ -88,13 +88,13 @@ doc.addEventListener('DOMContentLoaded', recalc, false);
 </div>
 </div>
 </a>
-  {% end %}
-    _________________________________________
-{% end %}
+
 
 
 </li>
-
+  {% end %}
+    _________________________________________
+{% end %}
 </ul>
 </div>
 <div id="footer" class="footer">
